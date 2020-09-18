@@ -928,6 +928,47 @@ fieldset {
 	nav {
 	position: fixed;
 }
+	
+	label.logo {
+	font-size: 21px;
+  line-height: 80px;
+    	padding: 0 15px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  line-height: 80px;
+  margin-right: 15px;
+}
+	
+	.content-2 .content-title {
+	font-size: 28px;
+}
+
+.content-2 .content-info {  
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.content-2 .content-info .certifs {
+	height: 400px;
+	padding: 20px;
+	margin-bottom: 10px;
+  padding-right: 10px;
+  padding: 0px;
+  padding-left: 30px;
+}
+
+.content-2 .content-info .certifs .logo {
+	height: 110px;
+	width: 110px;
+}
+
+
+.logo-espace {
+  width: 20px;  
+}
 
 section {
 	padding-top: 80;
