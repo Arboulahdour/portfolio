@@ -1142,10 +1142,25 @@ div .head-line-sc {
   width: 215px;
 }
 
-.content-title {
+.content .content-title {
          font-size: 16px;
 }
 
+.content-ex .content-title {
+         font-size: 16px;
+}
+
+.content-ss .content-title {
+         font-size: 16px;
+}
+
+.content-2 .content-title {
+         font-size: 16px;
+}
+
+.content-3 .content-title {
+         font-size: 16px;
+}
 
 
 }
