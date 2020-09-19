@@ -1109,62 +1109,62 @@ div .head-line-sc {
 
 .content-line-ab { 
   margin-bottom: 20px; 
-  background: rgb(2,69,108); 
+  background: #005086;
   height: 3px; 
-  width: 225px;
+  width: 220px;
 }
 
 .content-line-pr { 
   margin-bottom: 20px; 
-  background: rgb(2,69,108); 
+  background: #005086;
   height: 3px; 
-  width: 225px;
+  width: 220px;
 }
 
 .content-line-cer { 
   margin-bottom: 20px; 
-  background: rgb(2,69,108); 
+  background: #005086;
   height: 3px; 
-  width: 275px;
+  width: 273px;
 }
 
 .content-line-sck { 
   margin-bottom: 20px; 
-  background: rgb(2,69,108); 
+  background: #005086;
   height: 3px; 
-  width: 170px;
+  width: 165px;
 }
 
 .content-line-cn { 
   margin-bottom: 20px; 
-  background: rgb(2,69,108); 
+  background: #005086;
   height: 3px; 
-  width: 210px;
+  width: 205px;
 }
 
 .content .content-title {
-         font-size: 26px;
-         color: rgb(2,69,108);
+         font-size: 27px;
+         color: #005086;
 }
 
 .content-ex .content-title {
-         font-size: 26px;
-         color: rgb(2,69,108);
+         font-size: 27px;
+         color: #005086;
 }
 
 .content-ss .content-title {
-         font-size: 26px;
-         color: rgb(2,69,108);
+         font-size: 27px;
+         color: #005086;
 }
 
 .content-2 .content-title {
-         font-size: 26px;
-         color: rgb(2,69,108);
+         font-size: 27px;
+         color: #005086;
 }
 
 .content-3 .content-title {
-         font-size: 26px;
-         color: rgb(2,69,108);
+         font-size: 27px;
+         color: #005086;
 }
 
 
