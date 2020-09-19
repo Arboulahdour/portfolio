@@ -968,6 +968,10 @@ section {
 
 @media (max-width: 450px) {
 
+body {
+	font-family: cursive;
+}	
+	
 label.logo {
 	font-size: 21px;
   line-height: 80px;
