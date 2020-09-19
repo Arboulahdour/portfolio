@@ -995,15 +995,16 @@ div .user-pic {
 
 div .head-title {
 	padding-top: 25px;
-	font-size: 28px;
+	font-size: 25px;
         padding-left: 5px;
         padding-right: 5px;
 }
 
 div .head-desc {
 	font-size: 18px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        letter-spacing: 3px;
 }
 
 @keyframes h-title {
@@ -1012,12 +1013,12 @@ div .head-desc {
     }
 
     30%{
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         margin-bottom: -8px;
     }
 
     80%{
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         margin-bottom: -8px;
     }
 }
