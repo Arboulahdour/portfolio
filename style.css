@@ -1111,14 +1111,14 @@ div .head-line-sc {
   margin-bottom: 20px; 
   background: #005086;
   height: 3px; 
-  width: 200px;
+  width: 180px;
 }
 
 .content-line-pr { 
   margin-bottom: 20px; 
   background: #005086;
-  height: 3.5px; 
-  width: 200px;
+  height: 3.4px; 
+  width: 180px;
 }
 
 .content-line-cer { 
@@ -1131,15 +1131,15 @@ div .head-line-sc {
 .content-line-sck { 
   margin-bottom: 20px; 
   background: #005086;
-  height: 3px; 
-  width: 143px;
+  height: 3.3px; 
+  width: 133px;
 }
 
 .content-line-cn { 
   margin-bottom: 20px; 
   background: #005086;
-  height: 3.5px; 
-  width: 185px;
+  height: 3.3px; 
+  width: 175px;
 }
 
 .content .content-title {
