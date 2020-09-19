@@ -1111,55 +1111,60 @@ div .head-line-sc {
   margin-bottom: 20px; 
   background: rgb(2,69,108); 
   height: 3px; 
-  width: 227px;
+  width: 225px;
 }
 
 .content-line-pr { 
   margin-bottom: 20px; 
   background: rgb(2,69,108); 
   height: 3px; 
-  width: 227px;
+  width: 225px;
 }
 
 .content-line-cer { 
   margin-bottom: 20px; 
   background: rgb(2,69,108); 
   height: 3px; 
-  width: 277px;
+  width: 275px;
 }
 
 .content-line-sck { 
   margin-bottom: 20px; 
   background: rgb(2,69,108); 
   height: 3px; 
-  width: 172px;
+  width: 170px;
 }
 
 .content-line-cn { 
   margin-bottom: 20px; 
   background: rgb(2,69,108); 
   height: 3px; 
-  width: 212px;
+  width: 210px;
 }
 
 .content .content-title {
-         font-size: 25px;
+         font-size: 26px;
+         color: rgb(2,69,108);
 }
 
 .content-ex .content-title {
-         font-size: 25px;
+         font-size: 26px;
+         color: rgb(2,69,108);
 }
 
 .content-ss .content-title {
-         font-size: 25px;
+         font-size: 26px;
+         color: rgb(2,69,108);
 }
 
 .content-2 .content-title {
-         font-size: 25px;
+         font-size: 26px;
+         color: rgb(2,69,108);
 }
 
 .content-3 .content-title {
-         font-size: 25px;
+         font-size: 26px;
+         color: rgb(2,69,108);
 }
 
 
