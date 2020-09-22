@@ -17,7 +17,7 @@
 
 
 body {
-	font-family: cursive;
+	font-family: calibri;
 	height: 300vh;
 }
 
@@ -247,7 +247,7 @@ div .head-line {
 	padding: 20px;
 	color: #005086;
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 }
 
 /* Sidebar/left column */
@@ -296,14 +296,14 @@ div .head-line {
 	height: 240px;
 	color: #005086;
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
 h2 {
 	color: rgba(0,0,0,.75); /*rgb(2,69,108)*/
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
@@ -365,7 +365,7 @@ ol li{
 h2 {
 	color: rgba(0,0,0,.65);; /*rgb(2,69,108)*/
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
@@ -405,7 +405,7 @@ ol li{
 	padding: 10px;
 	color: #005086;
 	font-size: 20px;
-	font-family: cursive;
+	font-family: calibri;
 	display: inline-flex;
 	margin-bottom: -60px;
 }
@@ -456,14 +456,14 @@ ol li{
 	padding: 20px;
 	color: #005086;
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
 .content-3 .content-info-1 .about h2 {
 	color: #005086;
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
@@ -769,7 +769,7 @@ fieldset {
 	height: 700px;
 	color: #005086;
 	font-size: 25px;
-	font-family: cursive;
+	font-family: calibri;
 	text-align: left;
 }
 
@@ -877,7 +877,7 @@ fieldset {
 	padding: 10px;
 	color: rgb(2,69,108);
 	font-size: 20px;
-	font-family: cursive;
+	font-family: calibri;
 }
 
 /* Sidebar/left column */
@@ -904,7 +904,7 @@ fieldset {
 	padding: 10px;
 	color: rgb(2,69,108);
 	font-size: 20px;
-	font-family: cursive;
+	font-family: calibri;
 }
 
 .content-2 {
@@ -937,7 +937,7 @@ fieldset {
 	padding: 20px;
 	color: #005086;
 	font-size: 20px;
-	font-family: cursive;
+	font-family: calibri;
 	display: flex;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
@@ -974,7 +974,7 @@ section {
 @media (max-width: 450px) {
 
 body {
-	font-family: cursive;
+	font-family: calibri;
 }	
 	
 label.logo {
@@ -1077,7 +1077,7 @@ div .head-line-sc {
 	padding: 10px;
 	color: rgb(2,69,108);
 	font-size: 18px;
-	font-family: cursive;
+	font-family: calibri;
 }
 
 
