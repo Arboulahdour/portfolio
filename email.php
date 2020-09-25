@@ -2,7 +2,7 @@
 //    ini_set("sendmail_from", "ar.boulahdour@gmail.com");
     $to = "ar.boulahdour@outlook.com";
     $from = $_POST['email'];
-    $subject = "This is subject";
+    $subject = "Message came from your portfolio";
     $message = $_POST['commentaires'];
     $header = "From: ".$email.".\n\n";
 
