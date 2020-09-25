@@ -214,7 +214,7 @@
                 </div>
                 <div class="content-info-1">
                     <div class="container"> 
-                          <form id="contact" action="/email.php" method="post">
+                          <form id="contact" action="email.php" method="post" onsubmit='sendInfo();>
                             <fieldset>
                               <input placeholder="Your name" type="text" tabindex="1" required>
                             </fieldset>
