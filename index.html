@@ -13,22 +13,63 @@
 		<meta name="KeyWords" content=""/>
 		<meta name="Description" content=""/>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
     </head> 
-    <body> 
-    	<nav>
+    <body>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script> 
+    	<nav id="mylist">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-    		<label class="logo"><a href="#me" style="text-decoration: none; color: white;">Ar.Boulahdour</a></label>
+    		<label class="logo" id="logo-event"><a href="#me" style="text-decoration: none; color: white;" class="hov">Ar.Boulahdour</a></label>
     		<ul>
-    			<li><a href="#about-me">About me</a></li>
-    			<li><a href="#experience">Projects</a></li>
-    			<li><a href="#educ">Skills</a></li>
-    			<li><a href="#certifs">Certifications</a></li>
-    			<li><a href="#scontact">Contact</a></li>
+    			<li><a href="#about-me" class="hov">About me</a></li>
+    			<li><a href="#experience" class="hov">Projects</a></li>
+    			<li><a href="#educ" class="hov">Skills</a></li>
+    			<li><a href="#certifs" class="hov">Certifications</a></li>
+    			<li><a href="#scontact" class="hov">Contact</a></li>
     		</ul>
+
+        <!--    <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("mylist");
+var btns = header.getElementsByClassName("hov");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+-->
 
     	</nav>
         <a id="me"></a>
@@ -273,6 +314,11 @@
                     <br/>
                 <div style="color:white; font-size:16px; text-indent: 8px;">Copyright © 2020 ArBoulahdour.</div> 
             </div>
-
         </section>
+        <script src="scroll-out.js"></script>
+        <script type="text/javascript">
+            ScrollOut({
+                targets: '.content,.content-ex,.content-ss,.content-2,.content-3'
+            })
+        </script>
     </body>
