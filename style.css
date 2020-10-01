@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
 *{
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -15,106 +15,160 @@
   text-rendering: optimizeLegibility;
 }
 
+/*html {  
+  scroll-behavior: smooth;
+}*/
+
 
 body {
-	font-family: calibri;
-	height: 300vh;
+  font-family: calibri;
+  height: 300vh;
 }
 
 nav {
-	background: linear-gradient(to right, #217899 0%, #336699 50%, #1c7d99 100%);
-	background: linear-gradient(to right, #268ca6 0%, #306e9c 50%, #0085a3 100%);
-	height: 80px;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
+  background: linear-gradient(to right, #217899 0%, #336699 50%, #1c7d99 100%);
+  background: linear-gradient(to right, #268ca6 0%, #306e9c 50%, #0085a3 100%);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 label.logo {
-	color: white;
-	font-size: 33px;
-	line-height: 75px;
+  color: white;
+  font-size: 33px;
+  line-height: 75px;
     padding: 0 50px;
     font-weight: bold;
 }
 
 nav ul {
-	float: right;
-	margin-right: 30px;
+  float: right;
+  margin-right: 30px;
 }
 
 nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
 nav ul li a {
-	color: white;
-	font-size: 19px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	font-weight: bold;
-	text-transform: uppercase;
+  color: white;
+  font-size: 19px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav ul li a:hover {
+/*nav ul li a:hover {
     color: #1b9bff;
     -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+}*/
+
+
+li a.active, li a .hov:hover {
+    color: white;
+    background-color: #1b9bff;
 }
 
+label a.active, label a .hov:hover {
+    color: white;
+    background-color: transparent;
+}
+
+
 .checkbtn {
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
 }
 
 #check {
-	display: none;
+  display: none;
 
 }
 
 section {
-	padding-top: 80px;
+  padding-top: 80px;
+  animation: transitionIn 0.75s;
 }
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+} 
 
 
 #head {
-	/*background: #0082e6;*/
-	background: linear-gradient(to right, #63c7fa 0%, #458abd 25%, #5ebdf0 75%, #246fa8 100%);
-	background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
-	height: 615px;
-	padding-top: 70px; 
-	text-align: center;
+  /*background: #0082e6;*/
+  background: linear-gradient(to right, #63c7fa 0%, #458abd 25%, #5ebdf0 75%, #246fa8 100%);
+  background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+ /* background: #BBD2C5;  /* fallback for old browsers */
+ /* background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+ /* background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #57c1eb 0%, #246fa8 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 615px;
+  padding-top: 70px; 
+  text-align: center;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+
+}
+
+@keyframes change {
+    0%{
+          background-position: 0 50%;
+    }
+
+    50%{
+          background-position: 100 50%;
+
+    }
+
+    100%{
+          background-position: 0 50%;
+    }
 }
 
 #head div {
-	text-align: center;
+  text-align: center;
 }
 
 div .user-pic {
-	text-align: center;
-	border-radius: 100%;
-	background: white;
-	width: 240px;
-	height: 240px;
-	border: 3px inset white;
+  text-align: center;
+  border-radius: 100%;
+  background: white;
+  width: 240px;
+  height: 240px;
+  border: 3px inset white;
 }
 
 div .head-title {
-	text-align: center;
-	padding-top: 35px;
-	font-size: 35px;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 850;
-	animation: h-title 7s 1;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 850;
+  animation: h-title 7s 1;
 }
 
 
@@ -125,7 +179,7 @@ div .head-title {
     }
 
     30%{
-     	color: white;  /* #00DDFF; #8458B3;*/ 
+      color: white;  /* #00DDFF; #8458B3;*/ 
         letter-spacing: 6px;
         margin-bottom: -10px;
     }
@@ -138,88 +192,88 @@ div .head-title {
 }
 
 div .head-desc {
-	text-align: center;
-	font-size: 23px;
-	color: white;
-	font-weight: 450;
-	animation: h-title 7s 1;
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  font-weight: 450;
+  animation: h-title 7s 1;
 
 }
 
 div .head-line-sc {
-	display: inline-block;
-	text-align: center;
-	padding-top: 20px;
-	font-size: 20px;
-	color: white;
-	font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
 }
 
 div .head-line { 
-	width: 280px;  
-	margin-bottom: 20px; 
-	height: 2.5px; 
-	background: white;
+  width: 280px;  
+  margin-bottom: 20px; 
+  height: 2.5px; 
+  background: white;
 }
 
 
 .content {
-	text-align: center;
+  text-align: center;
 }
 
 
 .content-line-sc {
-	display: inline-block;
-	text-align: center;
-	padding-top: 20px;
-	font-size: 20px;
-	color: white;
-	font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
 }
 
 .content-line-ab { 
-	margin-bottom: 20px; 
-	background: rgb(2,69,108); 
-	height: 3px; 
-	width: 230px;
+  margin-bottom: 20px; 
+  background: rgb(2,69,108); 
+  height: 3px; 
+  width: 230px;
 }
 
 .content-line-pr { 
-	margin-bottom: 20px; 
-	background: rgb(2,69,108); 
-	height: 3px; 
-	width: 230px;
+  margin-bottom: 20px; 
+  background: rgb(2,69,108); 
+  height: 3px; 
+  width: 230px;
 }
 
 .content-line-cer { 
-	margin-bottom: 20px; 
-	background: rgb(2,69,108); 
-	height: 3px; 
-	width: 350px;
+  margin-bottom: 20px; 
+  background: rgb(2,69,108); 
+  height: 3px; 
+  width: 350px;
 }
 
 .content-line-sck { 
-	margin-bottom: 20px; 
-	background: rgb(2,69,108); 
-	height: 3px; 
-	width: 175px;
+  margin-bottom: 20px; 
+  background: rgb(2,69,108); 
+  height: 3px; 
+  width: 175px;
 }
 
 .content-line-cn { 
-	margin-bottom: 20px; 
-	background: rgb(2,69,108); 
-	height: 3px; 
-	width: 215px;
+  margin-bottom: 20px; 
+  background: rgb(2,69,108); 
+  height: 3px; 
+  width: 215px;
 }
 
 
 .content .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: #005086;
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: #005086;
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content .content-info {  
@@ -243,11 +297,11 @@ div .head-line {
   line-height: 1.35;
 }
 .content .content-info-1 .about {
-	height: 250px;
-	padding: 20px;
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
+  height: 250px;
+  padding: 20px;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
 }
 
 /* Sidebar/left column */
@@ -270,18 +324,18 @@ div .head-line {
 
 
 .content-ex {
-	background: #e3e9f1; /*#e3e9f1 rgb(198,214,234)*/
-	text-align: center;
+  background: #e3e9f1; /*#e3e9f1 rgb(198,214,234)*/
+  text-align: center;
 }
 
 
 .content-ex .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: #005086;
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: #005086;
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content-ex .content-info-1 {  
@@ -293,38 +347,38 @@ div .head-line {
   line-height: 1.35;
 }
 .content-ex .content-info-1 .about {
-	height: 240px;
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  height: 240px;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 h2 {
-	color: rgba(0,0,0,.75); /*rgb(2,69,108)*/
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  color: rgba(0,0,0,.75); /*rgb(2,69,108)*/
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 ol li{
-	text-indent: 20px;
+  text-indent: 20px;
 }
 
 
 .content-ss {
-	background: #e3e9f1; /*#e3e9f1 rgb(198,214,234)*/
-	text-align: center;
+  background: #e3e9f1; /*#e3e9f1 rgb(198,214,234)*/
+  text-align: center;
 }
 
 
 .content-ss .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: #005086;
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: #005086;
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content-ss .content-info-1 {  
@@ -336,58 +390,58 @@ ol li{
   line-height: 1.35;
 }
 .content-ss .content-info-1 .about {
-	height: 260px;
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  height: 260px;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 .content-ss .content-info-1 .about .line-1 {
-	display: inline-flex;
-	margin-bottom: 33px;
-	width: 100%;
+  display: inline-flex;
+  margin-bottom: 33px;
+  width: 100%;
 }
 
 .content-ss .content-info-1 .about .skills {
-	height: 60px;
-	width: 100%;
-	border: 1px solid white;
-	border-radius: 30px;
-	color: #005086;
-	background: white;
-	padding: 10px;
-	text-align: center;
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: #005086;
+  background: white;
+  padding: 10px;
+  text-align: center;
 }
 
 
 
 h2 {
-	color: rgba(0,0,0,.65);; /*rgb(2,69,108)*/
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  color: rgba(0,0,0,.65);; /*rgb(2,69,108)*/
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 ol li{
-	text-indent: 20px;
+  text-indent: 20px;
 }
 
 
 
 .content-2 {
-	background: white;
-	text-align: center;
+  background: white;
+  text-align: center;
 }
 
 
 .content-2 .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: #005086;
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: #005086;
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 
@@ -401,20 +455,20 @@ ol li{
 }
 
 .content-2 .content-info .certifs {
-	height: 300px;
-	padding: 10px;
-	color: #005086;
-	font-size: 20px;
-	font-family: calibri;
-	display: inline-flex;
-	margin-bottom: -60px;
+  height: 300px;
+  padding: 10px;
+  color: #005086;
+  font-size: 20px;
+  font-family: calibri;
+  display: inline-flex;
+  margin-bottom: -60px;
 }
 
 .content-2 .content-info .certifs .logo {
-	height: 180px;
-	width: 180px;
-	cursor: pointer;
-	transition: 0.6s
+  height: 180px;
+  width: 180px;
+  cursor: pointer;
+  transition: 0.6s
 }
 
 
@@ -423,24 +477,24 @@ ol li{
 }
 
 .content-2 .content-info .certifs .logo:hover {
-	transform: scale(0.85);
-	z-index: 0;
+  transform: scale(0.85);
+  z-index: 0;
 }
 
 
 .content-3 {
-	background: white;
-	text-align: center;
+  background: white;
+  text-align: center;
 }
 
 
 .content-3 .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: #005086;
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: #005086;
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content-3 .content-info-1 {  
@@ -452,23 +506,23 @@ ol li{
   line-height: 1.35;
 }
 .content-3 .content-info-1 .about {
-	height: 250px;
-	padding: 20px;
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  height: 250px;
+  padding: 20px;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 .content-3 .content-info-1 .about h2 {
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 .content-3 .content-info-1 .about ol li{
-	text-indent: 20px;
+  text-indent: 20px;
 }
 
 
@@ -479,14 +533,14 @@ ol li{
 
 .footer {
             background: linear-gradient(to right, #217899 0%, #336699 50%, #1c7d99 100%);
-			background: linear-gradient(to right, #268ca6 0%, #306e9c 50%, #0085a3 100%);
-	        height: 58px;
+      background: linear-gradient(to right, #268ca6 0%, #306e9c 50%, #0085a3 100%);
+          height: 58px;
             width: 100%;
 }
 
 
 
-		#about-sc {
+    #about-sc {
             text-align: center;
             width: 100%;
             margin-top: 40px;
@@ -605,6 +659,7 @@ ol li{
 
                 .active, .dot:hover {
                       background-color: #717171;
+                      background-color: #1b9bff;
                 }
     
                 /* Fading animation */
@@ -766,31 +821,31 @@ fieldset {
   line-height: 1.35;
 }
 .content-ss .content-info-1 .about {
-	height: 700px;
-	color: #005086;
-	font-size: 25px;
-	font-family: calibri;
-	text-align: left;
+  height: 700px;
+  color: #005086;
+  font-size: 25px;
+  font-family: calibri;
+  text-align: left;
 }
 
 .content-ss .content-info-1 .about .line-1 {
-	transition: 0.6s;
-  	display: flex;
-	margin-bottom: 33px;
-	width: 100%;
-	flex-wrap: wrap;
+  transition: 0.6s;
+    display: flex;
+  margin-bottom: 33px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .content-ss .content-info-1 .about .skills {
-	height: 60px;
-	width: 100%;
-	border: 1px solid white;
-	border-radius: 30px;
-	color: #005086;
-	background: white;
-	padding: 10px;
-	text-align: center;
-	margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: #005086;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 }
@@ -800,22 +855,22 @@ fieldset {
 
 
 @media (max-width: 1152px) {
-	label.logo {
-		font-size: 30px;
-		padding-left: 50px;
-	}
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
 
-	nav ul li a {
-		font-size: 16px;
-	}
+  nav ul li a {
+    font-size: 16px;
+  }
 
-		.checkbtn {
-		display: block;
+    .checkbtn {
+    display: block;
     }
 
     ul {
-    	position: fixed;
-    	width: 100%;
+      position: fixed;
+      width: 100%;
         height: 100vh;
         background: #2c3e50;
         top: 80px;
@@ -825,22 +880,22 @@ fieldset {
     }
 
     nav ul li {
-    	display: block;
-    	margin: 50px 0;
-    	line-height: 30px;
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
     }
 
     nav ul li a {
-    	font-size: 20px;
+      font-size: 20px;
     }
 
     a:hover,a.active {
-    	background: none;
-    	color: #0082e6;
+      background: none;
+      color: #0082e6;
     }
 
     #check:checked ~ ul {
-    	left: 0;
+      left: 0;
     }
 
 }
@@ -849,7 +904,7 @@ fieldset {
 @media (max-width: 1100px) {
 
     #head {
-	height: 650px;
+  height: 650px;
 }
 
     .content-info {   
@@ -873,11 +928,11 @@ fieldset {
   line-height: 1.35;
 }
 .content .content-info-1 .about {
-	height: 300px;
-	padding: 10px;
-	color: rgb(2,69,108);
-	font-size: 20px;
-	font-family: calibri;
+  height: 300px;
+  padding: 10px;
+  color: rgb(2,69,108);
+  font-size: 20px;
+  font-family: calibri;
 }
 
 /* Sidebar/left column */
@@ -900,26 +955,26 @@ fieldset {
   line-height: 1.35;
 }
 .content-ex .content-info-1 .about {
-	height: 350px;
-	padding: 10px;
-	color: rgb(2,69,108);
-	font-size: 20px;
-	font-family: calibri;
+  height: 350px;
+  padding: 10px;
+  color: rgb(2,69,108);
+  font-size: 20px;
+  font-family: calibri;
 }
 
 .content-2 {
-	background: white;
-	text-align: center;
+  background: white;
+  text-align: center;
 }
 
 
 .content-2 .content-title {
-	text-align: center;
-	padding-top: 50px;
-	color: rgb(2,69,108);
-	font-size: 33px;
-	font-weight: 800;
-	text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  color: rgb(2,69,108);
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content-2 .content-info {  
@@ -933,31 +988,31 @@ fieldset {
 }
 
 .content-2 .content-info .certifs {
-	height: 330px;
-	padding: 20px;
-	color: #005086;
-	font-size: 20px;
-	font-family: calibri;
-	display: flex;
-	margin-bottom: 10px;
-	flex-wrap: wrap;
-	padding-left: 40px;
+  height: 330px;
+  padding: 20px;
+  color: #005086;
+  font-size: 20px;
+  font-family: calibri;
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding-left: 80px;
 }
 
 .content-2 .content-info .certifs .logo {
-	height: 130px;
-	width: 130px;
-	cursor: pointer;
-	transition: 0.6s;
-	text-align: center;
-	margin-top: 20px;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.6s;
+  text-align: center;
+  margin-top: 20px;
 }
 
 }
 
-@media (max-width: 800px) {
-	nav {
-	position: fixed;
+@media (max-width: 480px) {
+  nav {
+  position: fixed;
 }
 
 nav ul li a {
@@ -965,8 +1020,13 @@ nav ul li a {
       
 }
 
+.content-2 .content-info .certifs {
+  
+  padding-left: 60px;
+}
+
 section {
-	padding-top: 80;
+  padding-top: 80;
 }
 
 }
@@ -974,13 +1034,13 @@ section {
 @media (max-width: 450px) {
 
 body {
-	font-family: calibri;
-}	
-	
+  font-family: calibri;
+} 
+  
 label.logo {
-	font-size: 21px;
+  font-size: 21px;
   line-height: 80px;
-    	padding: 0 15px;
+      padding: 0 15px;
 }
 
 .checkbtn {
@@ -990,24 +1050,24 @@ label.logo {
 }
 
     #head {
-	height: 650px;
+  height: 650px;
 }
 
 div .user-pic {
-	width: 220px;
-	height: 220px;
+  width: 220px;
+  height: 220px;
 }
 
 div .head-title {
-	padding-top: 25px;
-	font-size: 27px;
+  padding-top: 25px;
+  font-size: 27px;
         padding-left: 3px;
         padding-right: 3px;
         letter-spacing: 2px;
 }
 
 div .head-desc {
-	font-size: 18px;
+  font-size: 18px;
         padding-left: 5px;
         padding-right: 5px;
         letter-spacing: 2px;
@@ -1030,7 +1090,7 @@ div .head-desc {
 }
 
 div .head-line-sc {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 
@@ -1057,8 +1117,8 @@ div .head-line-sc {
 }
 
 .content .content-info-1 .about {
-	height: 350px;
-	font-size: 18px;
+  height: 350px;
+  font-size: 18px;
 }
 
 /* Sidebar/left column */
@@ -1073,16 +1133,16 @@ div .head-line-sc {
 
 
 .content-ex .content-info-1 .about {
-	height: 400px;
-	padding: 10px;
-	color: rgb(2,69,108);
-	font-size: 18px;
-	font-family: calibri;
+  height: 400px;
+  padding: 10px;
+  color: rgb(2,69,108);
+  font-size: 18px;
+  font-family: calibri;
 }
 
 
 .content-2 .content-title {
-	font-size: 28px;
+  font-size: 28px;
 }
 
 .content-2 .content-info {  
@@ -1092,17 +1152,17 @@ div .head-line-sc {
 }
 
 .content-2 .content-info .certifs {
-	height: 400px;
-	padding: 20px;
-	margin-bottom: 10px;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 10px;
   padding-right: 10px;
   padding: 0px;
   padding-left: 30px;
 }
 
 .content-2 .content-info .certifs .logo {
-	height: 110px;
-	width: 110px;
+  height: 110px;
+  width: 110px;
 }
 
 
@@ -1176,10 +1236,11 @@ div .head-line-sc {
 }
 
 
+
 section {
-	background: url() no-repeat;
-	background-size: cover;
-	height: calc(100vh - 80px)
+  background: url() no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px)
 }
 
 
