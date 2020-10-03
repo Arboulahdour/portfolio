@@ -605,8 +605,8 @@ ol li{
             transition: 0.6s;
         }
 
-        .fab.fa-instagram:hover {
-            color: #fb3958;
+        .fab.fa-github:hover {
+            color: rgba(0,0,0,.75);
             transition: 0.6s;
         }
 
